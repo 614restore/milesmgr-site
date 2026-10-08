@@ -72,7 +72,7 @@ h2 { font-size: clamp(26px, 4vw, 34px); letter-spacing: -0.01em; margin-bottom: 
 .card p { color: var(--muted); font-size: 15px; }
 .icon { width: 36px; height: 36px; border-radius: 10px; background: var(--gold-soft); color: var(--gold); display: grid; place-items: center; font-size: 18px; margin-bottom: 12px; }
 
-.shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 900px; margin: 0 auto; }
 .shots figure { text-align: center; }
 .shots img { border-radius: 22px; border: 5px solid #1b1c20; }
 .shots figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
