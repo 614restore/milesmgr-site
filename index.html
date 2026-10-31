@@ -93,7 +93,7 @@ src="https://www.facebook.com/tr?id=1832240871127078&ev=PageView&noscript=1"
       <h2>Your trips are yours</h2>
       <p class="sub">There's no MilesMGR account and no MilesMGR server. Your trips, receipts and places are kept on your iPhone and backed up to your own iCloud Drive. We can't see them, and nobody can sell them. <a href="privacy.html">Read the privacy policy</a>.</p>
       <h2>Pay once</h2>
-      <p class="sub">Free to download. Try everything free for 5 days, no payment required. Then unlock lifetime access with a single $19.99 purchase, not a subscription. <a href="https://apps.apple.com/us/app/milesmgr-mileage-drive-log/id6819932792?pt=82404571&amp;ct=milesmgr-site">Get MilesMGR on the App Store</a>.</p>
+      <p class="sub">Free to download. Try everything free for 5 days, no payment required. Then unlock lifetime access with a single $19.99 purchase, not a subscription. <span id="early-offer"><strong>Early supporters: $9.99 with code EARLYMILES, through December 9.</strong> Redeem it in the app under Settings › Redeem a code.</span> <a href="https://apps.apple.com/us/app/milesmgr-mileage-drive-log/id6819932792?pt=82404571&amp;ct=milesmgr-site">Get MilesMGR on the App Store</a>.</p>
     </div>
   </section>
 </main>
@@ -104,5 +104,9 @@ src="https://www.facebook.com/tr?id=1832240871127078&ev=PageView&noscript=1"
     <span><a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
   </div>
 </footer>
+<script>
+// The early-supporter offer hides itself after December 9 (US Eastern).
+if (Date.now() >= Date.UTC(2026, 11, 10, 5)) { var e = document.getElementById('early-offer'); if (e) e.remove(); }
+</script>
 </body>
 </html>
